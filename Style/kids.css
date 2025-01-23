@@ -95,7 +95,7 @@
 .outer-curriculum-section{
     background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
-    height: 890px;
+    /* height: 890px; */
     width: 100%;
 }
 .curriculum-heading{
@@ -167,10 +167,112 @@ a{
     justify-content: center;
     margin-top: 4rem;
 }
+/* stories section */
+.stories-outer-container{
+    /* height: 1018px; */
+    background-image: url(../assets/bg.png), linear-gradient(white, #FEA301);
+}
+
+/* stories section */
+.stories-heading{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.stories-heading h3{
+    margin-top: 5rem;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.stories-img-item{
+    width: 540px;
+    height: 630px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    background-color: white;
+}
+.st-img-content{
+    padding: 1rem;
+}
+.st-img-1 img{
+    border-radius: 15px 15px 0px 0px;
+}
+.st-img-1-btn{
+    padding: 14px 19px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #3CD8E8;
+    margin-top: -6rem;
+    margin-left: 1rem;
+}
+.st-img-content h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.st-img-content p{
+    color: #666666;
+}
+.s-item{
+    width: 290px;
+    height: 300px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: white;
+}
+.sitem2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+    
+}
+.s-item-btn{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 9px 18px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-top: -100px;
+    border: none;
+    background-color: #95B226;
+    color: white;
+}
+.s-item h3{
+    padding: 1rem;
+    margin-top: 0px;
+}
+.s-item-img-1 img{
+    border-radius: 10px 10px 0px 0px;
+}
+.s-item-hide{
+    display: none;
+}
+.view-all{
+    text-align: center;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+}
+.view-all button{
+    padding: 10px 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+}
+.view-all a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
     .navbar{
-        width: 95%;
+        width: 100%;
         border-bottom: 1px solid orange;
     }
     .navbar ul li{
@@ -178,6 +280,10 @@ a{
     }
     .school-logo h3{
         display: none;
+    }
+    .banner-img img{
+        width: 80%;
+        /* align-items: center; */
     }
     .btn-1{
         display: none;
@@ -203,6 +309,12 @@ a{
     .banner-content p {
         width: 100%;
     }
+    .banner-img{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
     .enroll-btn{
         width: 100px;
         height: 40px;
@@ -224,5 +336,34 @@ a{
     }
     .curriculum-btns{
         display: none;
+    }
+    /* stories section */
+    .stories-container{
+        width: 100%;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .stories-img-item{
+        display: none;
+    }
+    .sitem2{
+        width: 100%;
+    }
+    .st-img-1{
+        display: none;
+    }
+    .s-item{
+        width: 210px;
+        height: 290px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        background-color: white;
+    }
+    .s-item img{
+        width: 100%;
+    }
+    .s-item-hide{
+        display: block;
     }
 }
