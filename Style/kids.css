@@ -4,6 +4,16 @@
     font-weight: 400;
     font-style: normal;
 }
+.orange{
+    color: orange;
+}
+.skyblue{
+    color: skyblue;
+}
+.fixed-width{
+    width: 72.5rem;
+    margin: 0 auto;
+}
 /* navbar section */
 .navbar{
     display: flex;
@@ -46,6 +56,31 @@
     display: none;
 }
 
+/* banner section */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-content{
+    padding-top: 3rem;
+}
+.banner-content h3{
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+}
+.banner-content p {
+    width: 640px;
+}
+.enroll-btn{
+    width: 197px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -66,6 +101,26 @@
     }
     .btn-2{
         display: block;
+    }
+
+    /* banner section responsive */
+    .banner-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-content{
+        padding-top: 0px;
+        text-align: center;
+    }
+    .banner-content p {
+        width: 100%;
+    }
+    .enroll-btn{
+        width: 100px;
+        height: 40px;
+        font-size: 1rem;
     }
     
 }
