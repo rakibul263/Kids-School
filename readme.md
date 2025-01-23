@@ -1,8 +1,4 @@
-### WELCOME TO ASSIGNMENT-002
-
 # <img width=30 src="./assets/logo.png"/> Kids-School
-
-## Requirements (50)
 
 ### 1. Navbar
 
