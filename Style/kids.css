@@ -4,6 +4,15 @@
     font-weight: 400;
     font-style: normal;
 }
+.a1{
+    color: #64C8FF;
+}
+.a2{
+    color: #F0AA00;
+}
+.a3{
+    color: #8700FF;
+}
 .orange{
     color: orange;
 }
@@ -81,6 +90,79 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+/* curriculum section */
+.outer-curriculum-section{
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    height: 890px;
+    width: 100%;
+}
+.curriculum-heading{
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+.curriculum-items{
+    display: flex;
+    justify-content: space-between;
+}
+.citem{
+    height: 476px;
+    width: 367px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0.5px 0px .5px 0.5px darkgray;
+}
+.citem1{
+    background-image: linear-gradient(#DEF5FF, white);
+}
+.citem2{
+    background-image: linear-gradient(#FFF4DC, white);
+}
+.citem3{
+    background-image: linear-gradient(#EEE1FF, white);
+}
+.citem h3{
+    font-size: 24.5px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.citem a{
+    margin-top: 2rem;
+}
+.citem p{
+    padding: 0px 1rem 1rem 1rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.cbtn{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 1rem;
+    z-index: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    z-index: 100;
+    padding-top: -100px;
+    padding: 0.2rem;
+}
+.curriculum-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -122,5 +204,21 @@
         height: 40px;
         font-size: 1rem;
     }
-    
+    /* curriculum section added */
+    .curriculum-heading h3{
+        font-size: 2.5rem;
+        margin-top: 5rem;
+    }
+    .curriculum-container{
+        width: 100%;
+    }
+    .curriculum-items{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 2rem;
+    }
+    .curriculum-btns{
+        display: none;
+    }
 }
