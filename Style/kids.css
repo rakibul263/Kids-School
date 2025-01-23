@@ -1,0 +1,71 @@
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* navbar section */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 72.5rem;
+    margin: 0 auto;
+}
+.school-logo{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.school-logo h3{
+    padding-left: 1rem;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-right: 2rem;
+    font-size: 20px;
+}
+.navbar ul{
+    display: flex;
+}
+.btn-1{
+    background-color: orange;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
+.btn-2{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    .navbar{
+        width: 95%;
+        border-bottom: 1px solid orange;
+    }
+    .navbar ul li{
+        display: none;
+    }
+    .school-logo h3{
+        display: none;
+    }
+    .btn-1{
+        display: none;
+    }
+    .school-logo{
+        margin-bottom: 5px;
+    }
+    .btn-2{
+        display: block;
+    }
+    
+}
